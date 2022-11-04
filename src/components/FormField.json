@@ -1,0 +1,44 @@
+[    
+    {
+        "page_label": "Customer",
+        "fields": [
+            {
+                "id": "nama",
+                "label": "Nama",
+                "required": true,
+                "placeholder": "Nama",
+                "type": "text",
+                "max": 32
+            }, {
+                "id": "ktp",
+                "label": "KTP",
+                "required": true,
+                "placeholder": "No. KTP",
+                "type": "text",
+                "max": 32
+
+            }, {
+                "id": "alamat",
+                "label": "Alamat",
+                "required": true,
+                "placeholder": "Alamat",
+                "type": "text",
+                "max": 32
+            }, {
+                "id": "status",
+                "label": "Status",
+                "required": true,
+                "type": "select",
+                "options": [
+                    {
+                        "label": "Active",
+                        "value": "1"
+                    }, {
+                        "label": "Non-Active",
+                        "value": "0"
+                    }
+                ]
+            }
+        ]
+    }
+]
