@@ -5,13 +5,6 @@ import Checkbox from './elements/Checkbox';
 import Select from './elements/Select';
 
 const Element = ({ field, index }) => {
-
-    // useEffect(() => {
-    //     console.log(field.type);
-    // }, []);
-    
-    // return <p>{index}</p>
-
     switch(field.type){
         case 'text': 
             return <Text index={index} field={field}/>;

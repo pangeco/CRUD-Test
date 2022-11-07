@@ -1,49 +1,110 @@
 import React, { useEffect, useState } from 'react'
-import { useSearchParams, NavLink } from "react-router-dom";
-import Card from "../components/Card";
+import { NavLink } from "react-router-dom";
 import axios from 'axios';
-import { MdPerson } from "react-icons/md";
+import Table from 'react-bootstrap/Table';
+import { createColumnHelper, flexRender, getCoreRowModel, useReactTable } from '@tanstack/react-table';
+import FieldTable from '../components/FieldTable.json';
+
+const customer = {
+  name: String,
+  ktp: String,
+  alamat: String,
+  status: String,
+}
+const columnHelper = createColumnHelper(customer);
+
+const columns = [
+  columnHelper.accessor("nama", {
+    header: 'Nama',
+  }),
+  columnHelper.accessor("ktp", {
+    header: 'KTP',
+  }),
+  columnHelper.accessor("alamat", {
+    header: 'Alamat',
+  }),
+  columnHelper.accessor("status", {
+    header: 'Status',
+  }),
+]
 
 const Home = () => {
-    // const [searchQuery, setSearchQuery] = useSearchParams({ SearchQuery: ''});
+  const [elements, setElemennts] = useState(FieldTable[0]);
+  const [data, setData] = useState([]);
 
-    const [data, setData] = useState([]);
+  const table = useReactTable({ data, columns, getCoreRowModel});
 
-    const getData = async() => {
-      const url = 'http://localhost:8000/customer'
-      axios({
-        method: 'GET',
-        url: url
-      }).then(res => {
-        setData(res.data)
-      }).catch(error => {});
-    }
-    useEffect(() => {
-      getData();
-    }, []);
+  const getData = async() => {
+    const url = 'http://localhost:8000/customer'
+    axios({
+      method: 'GET',
+      url: url
+    }).then(res => {
+      setData(res.data)
+    }).catch(error => {});
+  }
+  useEffect(() => {
+    getData();
+  }, []);
 
-    return (
-    <div className=''>
+  return (
+    <div>
       {/* <input type="text" value={e => setSearchQuery({ query: e.target.value })} /> */}
-      <p className='flex justify-center text-xl font-bold uppercase mb-2 p-2'>Data</p>
-      <div className='flex flex-row justify-center m-2'>
-      {data.map((field, index) => {
-        return (
-          <div className='block p-4 shadow-lg rounded-lg border-grey border m-2 '>
-            <p className='font-bold'>{field.nama}</p>
-            <p className='text'>{field.ktp}</p>
-            <p className='text'>{field.alamat}</p>
-            {field.status != 0 ?
-              <p className='text'>Active</p>
-              : <p className='text'>Non-Active</p>
-            }
-            <div className='flex flex-row my-1 py-1 justify-between'>
-              <NavLink to={"/customer/" + field.id} className='p-2 rounded-md bg-blue-600 text-white font-medium'>Detail</NavLink>
-              <MdPerson size={32} className="self-center"/>
-            </div>
-          </div>
-        )
-      })}
+      <div className='border border-grey rounded-3 m-2 shadow-lg p-4'>
+        <p className='d-flex flex-row justify-content-center m-2 p-2 fw-bold text-uppercase fs-2'>Data Customer</p>
+        <Table striped="columns" hover responsive="md" >
+          <thead>
+          {/* {table.getHeaderGroups().map(headerGroup => (
+            <tr key={headerGroup.id}>
+              {headerGroup.headers.map(header => (
+                <th key={header.id}>
+                  {header.isPlaceholder
+                    ? null
+                    : flexRender(
+                        header.column.columnDef.header,
+                        header.getContext()
+                      )}
+                </th>
+              ))}
+            </tr>
+          ))} */}
+            <tr>
+              <th>No.</th>
+              <th>Nama</th>
+              <th>KTP</th>
+              <th>ALamat</th>
+              <th>Status</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+          {/* {table.getRowModel().rows.map(row => (
+            <tr key={row.id}>
+              {row.getVisibleCells().map(cell => (
+                <td key={cell.id}>
+                  {flexRender(cell.column.columnDef.cell, cell.getContext())}
+                </td>
+              ))}
+            </tr>
+          ))} */}
+          {data.map((field, index) => { return (
+            <tr>
+              <td>{field.id}</td>
+              <td>{field.nama}</td>
+              <td>{field.ktp}</td>
+              <td>{field.alamat}</td>
+              {field.status != 0 ?
+                <td>Active</td>
+                : <td>Non-Active</td>
+              }
+              <td className='flex flex-row my-1 py-1 justify-between'>
+                <NavLink to={"/customer/" + field.id} className='btn btn-secondary'>Detail</NavLink>
+              </td>
+            </tr>
+          )})}
+          </tbody>
+          
+        </Table>
       </div>
     </div>
   )

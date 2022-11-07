@@ -2,12 +2,14 @@ import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import Element from '../components/Element';
-import FormField from '../components/FormField.json' ;
+import FieldTable from '../components/FieldTable.json';
 import FormContext from '../components/FormContext';
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
 
 const Edit = ({ data }) => {
     const [newData, setNewData] = useState(data);
-    const [elements, setElemennts] = useState(FormField[0]);
+    const [elements, setElemennts] = useState(FieldTable[0]);
     const { fields, page_label } = elements;
     const navigate = useNavigate();
     const [inputFields, setInputFields] = useState([{name: '', phone: '', email: '', address: '', status: ''}]);
