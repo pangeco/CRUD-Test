@@ -5,29 +5,38 @@
             {
                 "id": "nama",
                 "label": "Nama",
-                "required": true,
                 "placeholder": "Nama",
                 "type": "text",
-                "max": 32
+                "defaultValue" : "",
+                "max": 32,
+                "rules" : {
+                    "required": true
+                }
             }, {
                 "id": "ktp",
                 "label": "KTP",
-                "required": true,
                 "placeholder": "No. KTP",
+                "defaultValue" : "",
                 "type": "text",
-                "max": 32
+                "max": 32,
+                "rules" : {
+                    "required": true
+                }
 
             }, {
                 "id": "alamat",
                 "label": "Alamat",
-                "required": true,
                 "placeholder": "Alamat",
+                "defaultValue" : "",
                 "type": "text",
-                "max": 32
+                "max": 32,
+                "rules" : {
+                    "required": true
+                }
             }, {
                 "id": "status",
                 "label": "Status",
-                "required": true,
+                "defaultValue" : "",
                 "type": "select",
                 "options": [
                     {
@@ -37,7 +46,10 @@
                         "label": "Non-Active",
                         "value": "0"
                     }
-                ]
+                ],
+                "rules" : {
+                    "required": true
+                }
             }
         ]
     }

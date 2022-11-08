@@ -7,12 +7,14 @@ import "./assets/style.css";
 import Edit from './pages/Edit';
 import Header from './components/Header';
 import Login from './pages/Login';
+import Sidebar from './components/Sidebar';
 
 const App = () => {
   
   return (
     <div>
       <Header />
+      <Sidebar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/customer/:id" element={<Detail />} />

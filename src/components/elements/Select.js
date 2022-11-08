@@ -3,18 +3,18 @@ import FormContext from '../FormContext'
 import Dropdown from 'react-bootstrap/Dropdown';
 import Form from 'react-bootstrap/Form';
 
-const Select = ({field, index}) => {
-    const { handleChange } = useContext(FormContext)
+const Select = (field) => {
+    // const { handleChange } = useContext(FormContext)
   return (
-      <div>
-        <label className='p-2 m-1 font-bold uppercase'>Status</label>
+      <Form.Group>
+        <Form.Label className='p-2 m-1 font-bold uppercase'>Status</Form.Label>
         <Form.Select variant="secondary"
-        onChange={(e) => handleChange(field.id, e)}>
+        onChange={(e) => field.onChange(e)}>
           {field.options.map((option, i) => 
             <option value={option.value} key={i}>{option.label}</option>
           )}
         </Form.Select>
-    </div>
+    </Form.Group>
   )
 }
 

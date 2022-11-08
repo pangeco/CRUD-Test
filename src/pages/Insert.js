@@ -8,17 +8,16 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Swal from 'sweetalert2';
 import withReactContent from 'sweetalert2-react-content'
-import { useForm } from "react-hook-form";
+import { Controller, useForm } from "react-hook-form";
 
 const MySwal = withReactContent(Swal);
 
 const Insert = () => {
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
-
     const [elements, setElemennts] = useState(FieldTable[0]);
     const { fields, page_label } = elements;
     const navigate = useNavigate();
-    const [inputFields, setInputFields] = useState([{name: '', phone: '', email: '', address: '', status: ''}]);
+    const [values, setValues] = useState({});
 
     const hanldeAlert = () => {
         MySwal.fire({
@@ -45,40 +44,11 @@ const Insert = () => {
         setElemennts(newElements);
     }
 
-    // const handleFormChange = (index, event) => {
-    //     const data = [...inputFields];
-    //     data[index][event.target.name] = event.target.value;
-    //     setInputFields(data);
-    // }
-    // const addFields = () => {
-    //     const newField = {
-    //         name: '', 
-    //         ktp: '',
-    //         email: '',
-    //         address: '', 
-    //         status: ''
-    //     }
-    //     setInputFields([...inputFields, newField]);
-    // }
-    
-    // useEffect(() => {
-    //     console.log(fields);
-    // }, []);
-
-    // const removeField = (index) => {
-    //     const newField = [...inputFields];
-    //     newField.splice(index, 1);
-    //     setInputFields(newField);
-    // }
-
-    // const handleValidIinput = () => {
-
-    // }
-
     const onSubmit = (event) => {
         console.log("handle Submit");
         event.preventDefault();
-
+        hanldeAlert();
+        navigate("/");
         // const { fields } = elements;
         // const newValue = {};
         // fields.map((field, index) => {
@@ -96,22 +66,21 @@ const Insert = () => {
         // }).catch(error => {});
     }
   return (
-    <FormContext.Provider value={ { handleChange } }>
+    // <FormContext.Provider value={ { handleChange }>
         <div className='mx-2'>
             <p className='flex justify-center font-bold uppercase text-xl m-2 p-2'>Add {page_label}</p>
-            <Form onSubmit={(e) => onSubmit(e)}>
+            <form onSubmit={(e) => onSubmit(e)}>
                 <div className='block p-4 shadow-lg rounded-lg border-grey border'>
-                    {fields ? fields.map((field, index) => 
-                        <Element key={index} field={field} />
-                        ) : null}
+                    {fields.map((e) => (
+                        <Element {...e}/>
+                    ))}
                     <div className='m-2'>
-                        {/* <button onClick={() => addFields()} type="button" className="p-2 bg-blue-600 text-white rounded-md mx-2">Add More</button> */}
                         <Button onClick={(e) => onSubmit(e)} type='submit' variant="success">Submit</Button>
                     </div>
                 </div>
-            </Form>
+            </form>
         </div>
-    </FormContext.Provider>
+    // </FormContext.Provider>
   )
 }
 

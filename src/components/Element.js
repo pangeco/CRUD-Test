@@ -4,16 +4,16 @@ import Radio from './elements/Radio';
 import Checkbox from './elements/Checkbox';
 import Select from './elements/Select';
 
-const Element = ({ field, index }) => {
+const Element = (field) => {
     switch(field.type){
         case 'text': 
-            return <Text index={index} field={field}/>;
+            return <Text {...field}/>;
         case 'radio':
-            return <Radio index={index} field={field}/>;
+            return <Radio {...field}/>;
         case 'checkbox':
-            return <Checkbox index={index} field={field}/>;
+            return <Checkbox {...field}/>;
         case 'select':
-            return <Select index={index} field={field}/>;
+            return <Select {...field}/>;
         default: 
          return 0;
     }

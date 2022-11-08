@@ -21,4 +21,5 @@ const customerSlice = createSlice({
 });
 
 export const { setCustomer } = customerSlice.actions;
-export default customerSlice.reducer;
+export const getCustomer = state => state.customer;
+export default customerSlice;
