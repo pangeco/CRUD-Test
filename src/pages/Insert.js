@@ -15,7 +15,7 @@ const MySwal = withReactContent(Swal);
 const Insert = () => {
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
     const [elements, setElemennts] = useState(FieldTable[0]);
-    const { fields, page_label } = elements;
+    const { fields, title} = elements;
     const navigate = useNavigate();
     const [values, setValues] = useState({});
 
@@ -47,6 +47,7 @@ const Insert = () => {
     const onSubmit = (event) => {
         console.log("handle Submit");
         event.preventDefault();
+        
         hanldeAlert();
         navigate("/");
         // const { fields } = elements;
@@ -68,14 +69,14 @@ const Insert = () => {
   return (
     // <FormContext.Provider value={ { handleChange }>
         <div className='mx-2'>
-            <p className='flex justify-center font-bold uppercase text-xl m-2 p-2'>Add {page_label}</p>
+            <p className='flex justify-center font-bold uppercase text-xl m-2 p-2'>New {title}</p>
             <form onSubmit={(e) => onSubmit(e)}>
                 <div className='block p-4 shadow-lg rounded-lg border-grey border'>
                     {fields.map((e) => (
                         <Element {...e}/>
                     ))}
                     <div className='m-2'>
-                        <Button onClick={(e) => onSubmit(e)} type='submit' variant="success">Submit</Button>
+                        <Button onClick={() => handleSubmit(onSubmit)} type='submit' variant="primary">Submit</Button>
                     </div>
                 </div>
             </form>
