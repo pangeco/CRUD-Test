@@ -4,19 +4,19 @@ import Radio from './elements/Radio';
 import Checkbox from './elements/Checkbox';
 import Select from './elements/Select';
 
-const Element = (field) => {
+const Element = ({ field, register }) => {
     switch(field.type){
         case 'text': 
-            return <Text {...field}/>;
-        case 'radio':
-            return <Radio {...field}/>;
-        case 'checkbox':
-            return <Checkbox {...field}/>;
+            return <Text field={field} register={register}/>;
+        // case 'radio':
+            // return <Radio field={field}/>;
+        // case 'checkbox':
+            // return <Checkbox field={field}/>;
         case 'select':
-            return <Select {...field}/>;
+            return <Select field={field} register={register}/>;
         default: 
          return 0;
     }
 }
 
-export default Element
+export default Element;

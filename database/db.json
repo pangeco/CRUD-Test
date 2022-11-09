@@ -1,104 +1,813 @@
 {
   "customer": [
-    {"id":1,"nama":"Meriel Euston","ktp":"9923254720","alamat":"758 Londonderry Hill","email":"meuston0@narod.ru","status":1},
-    {"id":2,"nama":"Quillan Poynton","ktp":"3235887172","alamat":"08 West Crossing","email":"qpoynton1@purevolume.com","status":0},
-    {"id":3,"nama":"Conant Eates","ktp":"9553704573","alamat":"78 Calypso Alley","email":"ceates2@elpais.com","status":0},
-    {"id":4,"nama":"Judy Sleight","ktp":"7660270141","alamat":"833 Park Meadow Point","email":"jsleight3@icio.us","status":0},
-    {"id":5,"nama":"Dannye Scarborough","ktp":"3751581456","alamat":"4045 Reinke Road","email":"dscarborough4@exblog.jp","status":0},
-    {"id":6,"nama":"Hakeem Bourbon","ktp":"7086920126","alamat":"949 David Junction","email":"hbourbon5@springer.com","status":1},
-    {"id":7,"nama":"Cesar Vasilic","ktp":"6104763391","alamat":"16 Rusk Parkway","email":"cvasilic6@a8.net","status":1},
-    {"id":8,"nama":"Brnaba Carleman","ktp":"5703828058","alamat":"58 Hudson Parkway","email":"bcarleman7@time.com","status":0},
-    {"id":9,"nama":"Symon Aronstam","ktp":"9671586155","alamat":"8 Old Shore Center","email":"saronstam8@hao123.com","status":0},
-    {"id":10,"nama":"Tedda Yoselevitch","ktp":"2355545987","alamat":"87 Northridge Drive","email":"tyoselevitch9@spiegel.de","status":0},
-    {"id":11,"nama":"Karita Baker","ktp":"8011274074","alamat":"6 Becker Junction","email":"kbakera@comcast.net","status":1},
-    {"id":12,"nama":"Jobyna Beech","ktp":"2437497609","alamat":"6429 Meadow Vale Terrace","email":"jbeechb@sogou.com","status":1},
-    {"id":13,"nama":"Leoine Sone","ktp":"3090142929","alamat":"6 Maple Wood Circle","email":"lsonec@cnn.com","status":1},
-    {"id":14,"nama":"Jeane Greenard","ktp":"8909444312","alamat":"3 Superior Road","email":"jgreenardd@histats.com","status":0},
-    {"id":15,"nama":"Vinny Bugbee","ktp":"2073111572","alamat":"89984 Hermina Avenue","email":"vbugbeee@google.co.uk","status":0},
-    {"id":16,"nama":"Susette Akast","ktp":"1511011181","alamat":"44996 Harbort Center","email":"sakastf@sbwire.com","status":1},
-    {"id":17,"nama":"Karlie Zupa","ktp":"9498696713","alamat":"3900 Oak Terrace","email":"kzupag@posterous.com","status":0},
-    {"id":18,"nama":"Lorry Howden","ktp":"0188925864","alamat":"67963 Maple Wood Park","email":"lhowdenh@wikia.com","status":1},
-    {"id":19,"nama":"Laverna O'Scollain","ktp":"5278481005","alamat":"0385 Main Trail","email":"loscollaini@comcast.net","status":0},
-    {"id":20,"nama":"Galven Alan","ktp":"6592986182","alamat":"88 Transport Trail","email":"galanj@marketwatch.com","status":0},
-    {"id":21,"nama":"Emelyne Pickavant","ktp":"8881097435","alamat":"57723 Parkside Point","email":"epickavantk@shop-pro.jp","status":0},
-    {"id":22,"nama":"Merell Caves","ktp":"0526404485","alamat":"06 Spohn Way","email":"mcavesl@typepad.com","status":0},
-    {"id":23,"nama":"Reube Cottu","ktp":"7776285692","alamat":"650 Del Mar Lane","email":"rcottum@yelp.com","status":1},
-    {"id":24,"nama":"Boot Venditto","ktp":"3119167967","alamat":"5 Bartillon Park","email":"bvenditton@dyndns.org","status":0},
-    {"id":25,"nama":"Husein Dowears","ktp":"4937651056","alamat":"7265 High Crossing Center","email":"hdowearso@yellowbook.com","status":0},
-    {"id":26,"nama":"Arabella Cantwell","ktp":"9449541582","alamat":"36 Clemons Parkway","email":"acantwellp@examiner.com","status":0},
-    {"id":27,"nama":"Ira Very","ktp":"7998336498","alamat":"42 Prairie Rose Drive","email":"iveryq@sina.com.cn","status":1},
-    {"id":28,"nama":"Rafferty Burrus","ktp":"4979653588","alamat":"06 Texas Road","email":"rburrusr@mit.edu","status":0},
-    {"id":29,"nama":"Mikol Filippucci","ktp":"7867218521","alamat":"3381 Mockingbird Way","email":"mfilippuccis@nih.gov","status":1},
-    {"id":30,"nama":"Rebekkah Pindell","ktp":"8379948823","alamat":"5536 Melody Parkway","email":"rpindellt@fc2.com","status":1},
-    {"id":31,"nama":"Edithe Damsell","ktp":"4972506016","alamat":"41455 Arapahoe Pass","email":"edamsellu@netvibes.com","status":0},
-    {"id":32,"nama":"Emma Marjanovic","ktp":"3776473169","alamat":"723 Banding Plaza","email":"emarjanovicv@abc.net.au","status":0},
-    {"id":33,"nama":"Nickola Oggers","ktp":"6106722269","alamat":"629 Namekagon Road","email":"noggersw@lulu.com","status":1},
-    {"id":34,"nama":"Karleen Stripp","ktp":"3069814832","alamat":"4374 Merry Drive","email":"kstrippx@amazon.co.jp","status":0},
-    {"id":35,"nama":"Wadsworth Glashby","ktp":"7495588780","alamat":"81 Moulton Road","email":"wglashbyy@ezinearticles.com","status":0},
-    {"id":36,"nama":"Dewain Jancy","ktp":"7060300481","alamat":"5 Declaration Trail","email":"djancyz@mozilla.org","status":1},
-    {"id":37,"nama":"Rees Bewly","ktp":"1921483571","alamat":"208 Killdeer Crossing","email":"rbewly10@eepurl.com","status":0},
-    {"id":38,"nama":"Claire Holdworth","ktp":"2494459788","alamat":"823 Fallview Trail","email":"choldworth11@sitemeter.com","status":0},
-    {"id":39,"nama":"Marina Pellant","ktp":"8236392031","alamat":"85 Petterle Terrace","email":"mpellant12@ameblo.jp","status":1},
-    {"id":40,"nama":"Niko Urlich","ktp":"1965275184","alamat":"8 Bonner Avenue","email":"nurlich13@mtv.com","status":0},
-    {"id":41,"nama":"Mildred Sneezum","ktp":"1056560800","alamat":"602 Raven Crossing","email":"msneezum14@google.com","status":0},
-    {"id":42,"nama":"Daffy Brambell","ktp":"8354408426","alamat":"83933 Grasskamp Circle","email":"dbrambell15@google.com.hk","status":1},
-    {"id":43,"nama":"Florinda Gonnel","ktp":"7826654343","alamat":"233 Stuart Alley","email":"fgonnel16@yolasite.com","status":0},
-    {"id":44,"nama":"Orion Cluff","ktp":"0589766414","alamat":"8 Tennyson Way","email":"ocluff17@chron.com","status":1},
-    {"id":45,"nama":"Genevieve Adan","ktp":"8638909888","alamat":"8123 Old Shore Park","email":"gadan18@google.es","status":0},
-    {"id":46,"nama":"Berenice Viccars","ktp":"2183965681","alamat":"28734 Vidon Road","email":"bviccars19@bigcartel.com","status":1},
-    {"id":47,"nama":"Lurlene Cosgry","ktp":"3451513617","alamat":"80505 Northview Way","email":"lcosgry1a@smh.com.au","status":0},
-    {"id":48,"nama":"Christoffer Jerrom","ktp":"3762539847","alamat":"10122 Grover Junction","email":"cjerrom1b@microsoft.com","status":0},
-    {"id":49,"nama":"Jaimie Mordey","ktp":"5298658911","alamat":"4 Vernon Street","email":"jmordey1c@odnoklassniki.ru","status":1},
-    {"id":50,"nama":"Filberte Gerdts","ktp":"1085162893","alamat":"6942 Mockingbird Road","email":"fgerdts1d@tiny.cc","status":0},
-    {"id":51,"nama":"Jewel Zimmermanns","ktp":"7805361886","alamat":"2294 Melby Way","email":"jzimmermanns1e@sfgate.com","status":0},
-    {"id":52,"nama":"Tiffani Girardet","ktp":"7169656167","alamat":"30376 Fremont Park","email":"tgirardet1f@illinois.edu","status":0},
-    {"id":53,"nama":"Damon Northrop","ktp":"9313140829","alamat":"85 Crescent Oaks Pass","email":"dnorthrop1g@arizona.edu","status":1},
-    {"id":54,"nama":"Winona Dauber","ktp":"7356488345","alamat":"169 Waxwing Park","email":"wdauber1h@amazon.co.uk","status":0},
-    {"id":55,"nama":"Darrin Jeannel","ktp":"1310840717","alamat":"6756 Tomscot Street","email":"djeannel1i@buzzfeed.com","status":0},
-    {"id":56,"nama":"Caleb Augur","ktp":"5362178482","alamat":"5 Comanche Trail","email":"caugur1j@yellowpages.com","status":0},
-    {"id":57,"nama":"Malissa Runnett","ktp":"5320935811","alamat":"2 Mcguire Way","email":"mrunnett1k@t-online.de","status":0},
-    {"id":58,"nama":"Opaline Poulney","ktp":"4738846914","alamat":"53766 Crescent Oaks Junction","email":"opoulney1l@macromedia.com","status":0},
-    {"id":59,"nama":"Sherrie Meas","ktp":"9877644789","alamat":"242 Fairfield Crossing","email":"smeas1m@netvibes.com","status":1},
-    {"id":60,"nama":"Noah Patridge","ktp":"8541551113","alamat":"71 Weeping Birch Way","email":"npatridge1n@mlb.com","status":1},
-    {"id":61,"nama":"Sonny Rickerby","ktp":"1653112085","alamat":"70 Grim Avenue","email":"srickerby1o@abc.net.au","status":0},
-    {"id":62,"nama":"Franny Lynthal","ktp":"3310889572","alamat":"5415 Almo Alley","email":"flynthal1p@slideshare.net","status":0},
-    {"id":63,"nama":"Thadeus Chillingsworth","ktp":"2448303614","alamat":"0113 East Pass","email":"tchillingsworth1q@yellowpages.com","status":0},
-    {"id":64,"nama":"Kirstin Londors","ktp":"0347783953","alamat":"142 Brentwood Circle","email":"klondors1r@vimeo.com","status":0},
-    {"id":65,"nama":"Dagmar Nuccitelli","ktp":"9192494242","alamat":"868 Brentwood Drive","email":"dnuccitelli1s@unblog.fr","status":0},
-    {"id":66,"nama":"Howard Backshell","ktp":"7181538268","alamat":"91346 Del Mar Lane","email":"hbackshell1t@hexun.com","status":0},
-    {"id":67,"nama":"Diego Gonzales","ktp":"4890861041","alamat":"303 Buhler Lane","email":"dgonzales1u@state.gov","status":0},
-    {"id":68,"nama":"Tull MacGaughie","ktp":"9513727238","alamat":"43 Maywood Court","email":"tmacgaughie1v@apple.com","status":0},
-    {"id":69,"nama":"Tracey Hinzer","ktp":"2732524557","alamat":"79 Hooker Junction","email":"thinzer1w@indiegogo.com","status":1},
-    {"id":70,"nama":"Delia Munby","ktp":"0865441278","alamat":"85 Del Sol Plaza","email":"dmunby1x@ask.com","status":0},
-    {"id":71,"nama":"Pebrook Wickrath","ktp":"3417940931","alamat":"744 Carpenter Court","email":"pwickrath1y@blogs.com","status":0},
-    {"id":72,"nama":"Cecilius Gantley","ktp":"4412620433","alamat":"2 Ruskin Lane","email":"cgantley1z@bigcartel.com","status":0},
-    {"id":73,"nama":"Jimmy Heavyside","ktp":"2691932397","alamat":"239 Pennsylvania Plaza","email":"jheavyside20@statcounter.com","status":1},
-    {"id":74,"nama":"Stephan Linthead","ktp":"1244462446","alamat":"125 Sunfield Plaza","email":"slinthead21@chron.com","status":0},
-    {"id":75,"nama":"Maxy Brightie","ktp":"1943976244","alamat":"964 Green Ridge Road","email":"mbrightie22@etsy.com","status":1},
-    {"id":76,"nama":"Den Sweatland","ktp":"1223488438","alamat":"0009 Lakeland Center","email":"dsweatland23@tamu.edu","status":0},
-    {"id":77,"nama":"Toby Corbet","ktp":"2668123526","alamat":"8593 Straubel Avenue","email":"tcorbet24@ibm.com","status":0},
-    {"id":78,"nama":"Harman Hiom","ktp":"0086979078","alamat":"4176 Bobwhite Parkway","email":"hhiom25@usatoday.com","status":1},
-    {"id":79,"nama":"Newton Spurnier","ktp":"0386307601","alamat":"5656 Moulton Plaza","email":"nspurnier26@howstuffworks.com","status":1},
-    {"id":80,"nama":"Brigid Burhill","ktp":"9315078241","alamat":"4 Longview Park","email":"bburhill27@t-online.de","status":0},
-    {"id":81,"nama":"Engelbert Erbe","ktp":"1166769925","alamat":"855 Manley Center","email":"eerbe28@dmoz.org","status":1},
-    {"id":82,"nama":"Reba Shovelbottom","ktp":"1793085048","alamat":"072 Vermont Center","email":"rshovelbottom29@cargocollective.com","status":1},
-    {"id":83,"nama":"Cully Jennings","ktp":"4001016664","alamat":"8931 Raven Lane","email":"cjennings2a@cocolog-nifty.com","status":1},
-    {"id":84,"nama":"Walker Life","ktp":"6170748419","alamat":"418 4th Hill","email":"wlife2b@hud.gov","status":1},
-    {"id":85,"nama":"Maisie Burcher","ktp":"3565282541","alamat":"6 Summer Ridge Avenue","email":"mburcher2c@deliciousdays.com","status":1},
-    {"id":86,"nama":"Pablo Mercey","ktp":"6267488683","alamat":"0277 Goodland Way","email":"pmercey2d@scribd.com","status":0},
-    {"id":87,"nama":"Almeda Harly","ktp":"2692291824","alamat":"5712 Delaware Point","email":"aharly2e@themeforest.net","status":0},
-    {"id":88,"nama":"Quentin Rameaux","ktp":"5899803746","alamat":"45310 Corry Hill","email":"qrameaux2f@wp.com","status":0},
-    {"id":89,"nama":"Albie Gilham","ktp":"8321741096","alamat":"873 Hintze Crossing","email":"agilham2g@issuu.com","status":1},
-    {"id":90,"nama":"Hashim Soff","ktp":"0477658997","alamat":"049 Lotheville Drive","email":"hsoff2h@stumbleupon.com","status":0},
-    {"id":91,"nama":"Sheri Langdale","ktp":"0491382170","alamat":"6 Scott Place","email":"slangdale2i@java.com","status":1},
-    {"id":92,"nama":"Franny Pimme","ktp":"9040776199","alamat":"846 Nobel Avenue","email":"fpimme2j@cdbaby.com","status":0},
-    {"id":93,"nama":"Lavena Comley","ktp":"5384460539","alamat":"31561 Cherokee Way","email":"lcomley2k@bbb.org","status":1},
-    {"id":94,"nama":"Cedric Kopta","ktp":"6381248823","alamat":"399 Caliangt Hill","email":"ckopta2l@ocn.ne.jp","status":0},
-    {"id":95,"nama":"Augusta Hawkswell","ktp":"2693140307","alamat":"1 West Crossing","email":"ahawkswell2m@icq.com","status":1},
-    {"id":96,"nama":"Arman Bunning","ktp":"1957897465","alamat":"7 Graceland Alley","email":"abunning2n@linkedin.com","status":0},
-    {"id":97,"nama":"Fallon Spurway","ktp":"3903052442","alamat":"5 2nd Avenue","email":"fspurway2o@mtv.com","status":1},
-    {"id":98,"nama":"Corie Bossons","ktp":"0758832893","alamat":"55366 Ruskin Place","email":"cbossons2p@furl.net","status":0},
-    {"id":99,"nama":"Issy Frewer","ktp":"1951462661","alamat":"154 Myrtle Court","email":"ifrewer2q@youtu.be","status":0},
-    {"id":100,"nama":"Rosalynd MacKnight","ktp":"4194393732","alamat":"281 Bay Place","email":"rmacknight2r@wp.com","status":0}
+    {
+      "nama": "Edwin Pangda",
+      "ktp": "61030423045550",
+      "alamat": "Jl. Candi Gebang",
+      "status": 1,
+      "id": 1
+    },
+    {
+      "nama": "Quillan Poynton",
+      "ktp": "3235887172",
+      "alamat": "08 West Crossing",
+      "status": 1,
+      "id": 2
+    },
+    {
+      "id": 3,
+      "nama": "Conant Eates",
+      "ktp": "9553704573",
+      "alamat": "78 Calypso Alley",
+      "email": "ceates2@elpais.com",
+      "status": 0
+    },
+    {
+      "id": 4,
+      "nama": "Judy Sleight",
+      "ktp": "7660270141",
+      "alamat": "833 Park Meadow Point",
+      "email": "jsleight3@icio.us",
+      "status": 0
+    },
+    {
+      "id": 5,
+      "nama": "Dannye Scarborough",
+      "ktp": "3751581456",
+      "alamat": "4045 Reinke Road",
+      "email": "dscarborough4@exblog.jp",
+      "status": 0
+    },
+    {
+      "id": 6,
+      "nama": "Hakeem Bourbon",
+      "ktp": "7086920126",
+      "alamat": "949 David Junction",
+      "email": "hbourbon5@springer.com",
+      "status": 1
+    },
+    {
+      "id": 7,
+      "nama": "Cesar Vasilic",
+      "ktp": "6104763391",
+      "alamat": "16 Rusk Parkway",
+      "email": "cvasilic6@a8.net",
+      "status": 1
+    },
+    {
+      "id": 8,
+      "nama": "Brnaba Carleman",
+      "ktp": "5703828058",
+      "alamat": "58 Hudson Parkway",
+      "email": "bcarleman7@time.com",
+      "status": 0
+    },
+    {
+      "id": 9,
+      "nama": "Symon Aronstam",
+      "ktp": "9671586155",
+      "alamat": "8 Old Shore Center",
+      "email": "saronstam8@hao123.com",
+      "status": 0
+    },
+    {
+      "id": 10,
+      "nama": "Tedda Yoselevitch",
+      "ktp": "2355545987",
+      "alamat": "87 Northridge Drive",
+      "email": "tyoselevitch9@spiegel.de",
+      "status": 0
+    },
+    {
+      "id": 11,
+      "nama": "Karita Baker",
+      "ktp": "8011274074",
+      "alamat": "6 Becker Junction",
+      "email": "kbakera@comcast.net",
+      "status": 1
+    },
+    {
+      "id": 12,
+      "nama": "Jobyna Beech",
+      "ktp": "2437497609",
+      "alamat": "6429 Meadow Vale Terrace",
+      "email": "jbeechb@sogou.com",
+      "status": 1
+    },
+    {
+      "id": 13,
+      "nama": "Leoine Sone",
+      "ktp": "3090142929",
+      "alamat": "6 Maple Wood Circle",
+      "email": "lsonec@cnn.com",
+      "status": 1
+    },
+    {
+      "id": 14,
+      "nama": "Jeane Greenard",
+      "ktp": "8909444312",
+      "alamat": "3 Superior Road",
+      "email": "jgreenardd@histats.com",
+      "status": 0
+    },
+    {
+      "id": 15,
+      "nama": "Vinny Bugbee",
+      "ktp": "2073111572",
+      "alamat": "89984 Hermina Avenue",
+      "email": "vbugbeee@google.co.uk",
+      "status": 0
+    },
+    {
+      "id": 16,
+      "nama": "Susette Akast",
+      "ktp": "1511011181",
+      "alamat": "44996 Harbort Center",
+      "email": "sakastf@sbwire.com",
+      "status": 1
+    },
+    {
+      "id": 17,
+      "nama": "Karlie Zupa",
+      "ktp": "9498696713",
+      "alamat": "3900 Oak Terrace",
+      "email": "kzupag@posterous.com",
+      "status": 0
+    },
+    {
+      "id": 18,
+      "nama": "Lorry Howden",
+      "ktp": "0188925864",
+      "alamat": "67963 Maple Wood Park",
+      "email": "lhowdenh@wikia.com",
+      "status": 1
+    },
+    {
+      "id": 19,
+      "nama": "Laverna O'Scollain",
+      "ktp": "5278481005",
+      "alamat": "0385 Main Trail",
+      "email": "loscollaini@comcast.net",
+      "status": 0
+    },
+    {
+      "id": 20,
+      "nama": "Galven Alan",
+      "ktp": "6592986182",
+      "alamat": "88 Transport Trail",
+      "email": "galanj@marketwatch.com",
+      "status": 0
+    },
+    {
+      "id": 21,
+      "nama": "Emelyne Pickavant",
+      "ktp": "8881097435",
+      "alamat": "57723 Parkside Point",
+      "email": "epickavantk@shop-pro.jp",
+      "status": 0
+    },
+    {
+      "id": 22,
+      "nama": "Merell Caves",
+      "ktp": "0526404485",
+      "alamat": "06 Spohn Way",
+      "email": "mcavesl@typepad.com",
+      "status": 0
+    },
+    {
+      "id": 23,
+      "nama": "Reube Cottu",
+      "ktp": "7776285692",
+      "alamat": "650 Del Mar Lane",
+      "email": "rcottum@yelp.com",
+      "status": 1
+    },
+    {
+      "id": 24,
+      "nama": "Boot Venditto",
+      "ktp": "3119167967",
+      "alamat": "5 Bartillon Park",
+      "email": "bvenditton@dyndns.org",
+      "status": 0
+    },
+    {
+      "id": 25,
+      "nama": "Husein Dowears",
+      "ktp": "4937651056",
+      "alamat": "7265 High Crossing Center",
+      "email": "hdowearso@yellowbook.com",
+      "status": 0
+    },
+    {
+      "id": 26,
+      "nama": "Arabella Cantwell",
+      "ktp": "9449541582",
+      "alamat": "36 Clemons Parkway",
+      "email": "acantwellp@examiner.com",
+      "status": 0
+    },
+    {
+      "id": 27,
+      "nama": "Ira Very",
+      "ktp": "7998336498",
+      "alamat": "42 Prairie Rose Drive",
+      "email": "iveryq@sina.com.cn",
+      "status": 1
+    },
+    {
+      "id": 28,
+      "nama": "Rafferty Burrus",
+      "ktp": "4979653588",
+      "alamat": "06 Texas Road",
+      "email": "rburrusr@mit.edu",
+      "status": 0
+    },
+    {
+      "id": 29,
+      "nama": "Mikol Filippucci",
+      "ktp": "7867218521",
+      "alamat": "3381 Mockingbird Way",
+      "email": "mfilippuccis@nih.gov",
+      "status": 1
+    },
+    {
+      "id": 30,
+      "nama": "Rebekkah Pindell",
+      "ktp": "8379948823",
+      "alamat": "5536 Melody Parkway",
+      "email": "rpindellt@fc2.com",
+      "status": 1
+    },
+    {
+      "id": 31,
+      "nama": "Edithe Damsell",
+      "ktp": "4972506016",
+      "alamat": "41455 Arapahoe Pass",
+      "email": "edamsellu@netvibes.com",
+      "status": 0
+    },
+    {
+      "id": 32,
+      "nama": "Emma Marjanovic",
+      "ktp": "3776473169",
+      "alamat": "723 Banding Plaza",
+      "email": "emarjanovicv@abc.net.au",
+      "status": 0
+    },
+    {
+      "id": 33,
+      "nama": "Nickola Oggers",
+      "ktp": "6106722269",
+      "alamat": "629 Namekagon Road",
+      "email": "noggersw@lulu.com",
+      "status": 1
+    },
+    {
+      "id": 34,
+      "nama": "Karleen Stripp",
+      "ktp": "3069814832",
+      "alamat": "4374 Merry Drive",
+      "email": "kstrippx@amazon.co.jp",
+      "status": 0
+    },
+    {
+      "id": 35,
+      "nama": "Wadsworth Glashby",
+      "ktp": "7495588780",
+      "alamat": "81 Moulton Road",
+      "email": "wglashbyy@ezinearticles.com",
+      "status": 0
+    },
+    {
+      "id": 36,
+      "nama": "Dewain Jancy",
+      "ktp": "7060300481",
+      "alamat": "5 Declaration Trail",
+      "email": "djancyz@mozilla.org",
+      "status": 1
+    },
+    {
+      "id": 37,
+      "nama": "Rees Bewly",
+      "ktp": "1921483571",
+      "alamat": "208 Killdeer Crossing",
+      "email": "rbewly10@eepurl.com",
+      "status": 0
+    },
+    {
+      "id": 38,
+      "nama": "Claire Holdworth",
+      "ktp": "2494459788",
+      "alamat": "823 Fallview Trail",
+      "email": "choldworth11@sitemeter.com",
+      "status": 0
+    },
+    {
+      "id": 39,
+      "nama": "Marina Pellant",
+      "ktp": "8236392031",
+      "alamat": "85 Petterle Terrace",
+      "email": "mpellant12@ameblo.jp",
+      "status": 1
+    },
+    {
+      "id": 40,
+      "nama": "Niko Urlich",
+      "ktp": "1965275184",
+      "alamat": "8 Bonner Avenue",
+      "email": "nurlich13@mtv.com",
+      "status": 0
+    },
+    {
+      "id": 41,
+      "nama": "Mildred Sneezum",
+      "ktp": "1056560800",
+      "alamat": "602 Raven Crossing",
+      "email": "msneezum14@google.com",
+      "status": 0
+    },
+    {
+      "id": 42,
+      "nama": "Daffy Brambell",
+      "ktp": "8354408426",
+      "alamat": "83933 Grasskamp Circle",
+      "email": "dbrambell15@google.com.hk",
+      "status": 1
+    },
+    {
+      "id": 43,
+      "nama": "Florinda Gonnel",
+      "ktp": "7826654343",
+      "alamat": "233 Stuart Alley",
+      "email": "fgonnel16@yolasite.com",
+      "status": 0
+    },
+    {
+      "id": 44,
+      "nama": "Orion Cluff",
+      "ktp": "0589766414",
+      "alamat": "8 Tennyson Way",
+      "email": "ocluff17@chron.com",
+      "status": 1
+    },
+    {
+      "id": 45,
+      "nama": "Genevieve Adan",
+      "ktp": "8638909888",
+      "alamat": "8123 Old Shore Park",
+      "email": "gadan18@google.es",
+      "status": 0
+    },
+    {
+      "id": 46,
+      "nama": "Berenice Viccars",
+      "ktp": "2183965681",
+      "alamat": "28734 Vidon Road",
+      "email": "bviccars19@bigcartel.com",
+      "status": 1
+    },
+    {
+      "id": 47,
+      "nama": "Lurlene Cosgry",
+      "ktp": "3451513617",
+      "alamat": "80505 Northview Way",
+      "email": "lcosgry1a@smh.com.au",
+      "status": 0
+    },
+    {
+      "id": 48,
+      "nama": "Christoffer Jerrom",
+      "ktp": "3762539847",
+      "alamat": "10122 Grover Junction",
+      "email": "cjerrom1b@microsoft.com",
+      "status": 0
+    },
+    {
+      "id": 49,
+      "nama": "Jaimie Mordey",
+      "ktp": "5298658911",
+      "alamat": "4 Vernon Street",
+      "email": "jmordey1c@odnoklassniki.ru",
+      "status": 1
+    },
+    {
+      "id": 50,
+      "nama": "Filberte Gerdts",
+      "ktp": "1085162893",
+      "alamat": "6942 Mockingbird Road",
+      "email": "fgerdts1d@tiny.cc",
+      "status": 0
+    },
+    {
+      "id": 51,
+      "nama": "Jewel Zimmermanns",
+      "ktp": "7805361886",
+      "alamat": "2294 Melby Way",
+      "email": "jzimmermanns1e@sfgate.com",
+      "status": 0
+    },
+    {
+      "id": 52,
+      "nama": "Tiffani Girardet",
+      "ktp": "7169656167",
+      "alamat": "30376 Fremont Park",
+      "email": "tgirardet1f@illinois.edu",
+      "status": 0
+    },
+    {
+      "id": 53,
+      "nama": "Damon Northrop",
+      "ktp": "9313140829",
+      "alamat": "85 Crescent Oaks Pass",
+      "email": "dnorthrop1g@arizona.edu",
+      "status": 1
+    },
+    {
+      "id": 54,
+      "nama": "Winona Dauber",
+      "ktp": "7356488345",
+      "alamat": "169 Waxwing Park",
+      "email": "wdauber1h@amazon.co.uk",
+      "status": 0
+    },
+    {
+      "id": 55,
+      "nama": "Darrin Jeannel",
+      "ktp": "1310840717",
+      "alamat": "6756 Tomscot Street",
+      "email": "djeannel1i@buzzfeed.com",
+      "status": 0
+    },
+    {
+      "id": 56,
+      "nama": "Caleb Augur",
+      "ktp": "5362178482",
+      "alamat": "5 Comanche Trail",
+      "email": "caugur1j@yellowpages.com",
+      "status": 0
+    },
+    {
+      "id": 57,
+      "nama": "Malissa Runnett",
+      "ktp": "5320935811",
+      "alamat": "2 Mcguire Way",
+      "email": "mrunnett1k@t-online.de",
+      "status": 0
+    },
+    {
+      "id": 58,
+      "nama": "Opaline Poulney",
+      "ktp": "4738846914",
+      "alamat": "53766 Crescent Oaks Junction",
+      "email": "opoulney1l@macromedia.com",
+      "status": 0
+    },
+    {
+      "id": 59,
+      "nama": "Sherrie Meas",
+      "ktp": "9877644789",
+      "alamat": "242 Fairfield Crossing",
+      "email": "smeas1m@netvibes.com",
+      "status": 1
+    },
+    {
+      "id": 60,
+      "nama": "Noah Patridge",
+      "ktp": "8541551113",
+      "alamat": "71 Weeping Birch Way",
+      "email": "npatridge1n@mlb.com",
+      "status": 1
+    },
+    {
+      "id": 61,
+      "nama": "Sonny Rickerby",
+      "ktp": "1653112085",
+      "alamat": "70 Grim Avenue",
+      "email": "srickerby1o@abc.net.au",
+      "status": 0
+    },
+    {
+      "id": 62,
+      "nama": "Franny Lynthal",
+      "ktp": "3310889572",
+      "alamat": "5415 Almo Alley",
+      "email": "flynthal1p@slideshare.net",
+      "status": 0
+    },
+    {
+      "id": 63,
+      "nama": "Thadeus Chillingsworth",
+      "ktp": "2448303614",
+      "alamat": "0113 East Pass",
+      "email": "tchillingsworth1q@yellowpages.com",
+      "status": 0
+    },
+    {
+      "id": 64,
+      "nama": "Kirstin Londors",
+      "ktp": "0347783953",
+      "alamat": "142 Brentwood Circle",
+      "email": "klondors1r@vimeo.com",
+      "status": 0
+    },
+    {
+      "id": 65,
+      "nama": "Dagmar Nuccitelli",
+      "ktp": "9192494242",
+      "alamat": "868 Brentwood Drive",
+      "email": "dnuccitelli1s@unblog.fr",
+      "status": 0
+    },
+    {
+      "id": 66,
+      "nama": "Howard Backshell",
+      "ktp": "7181538268",
+      "alamat": "91346 Del Mar Lane",
+      "email": "hbackshell1t@hexun.com",
+      "status": 0
+    },
+    {
+      "id": 67,
+      "nama": "Diego Gonzales",
+      "ktp": "4890861041",
+      "alamat": "303 Buhler Lane",
+      "email": "dgonzales1u@state.gov",
+      "status": 0
+    },
+    {
+      "id": 68,
+      "nama": "Tull MacGaughie",
+      "ktp": "9513727238",
+      "alamat": "43 Maywood Court",
+      "email": "tmacgaughie1v@apple.com",
+      "status": 0
+    },
+    {
+      "id": 69,
+      "nama": "Tracey Hinzer",
+      "ktp": "2732524557",
+      "alamat": "79 Hooker Junction",
+      "email": "thinzer1w@indiegogo.com",
+      "status": 1
+    },
+    {
+      "id": 70,
+      "nama": "Delia Munby",
+      "ktp": "0865441278",
+      "alamat": "85 Del Sol Plaza",
+      "email": "dmunby1x@ask.com",
+      "status": 0
+    },
+    {
+      "id": 71,
+      "nama": "Pebrook Wickrath",
+      "ktp": "3417940931",
+      "alamat": "744 Carpenter Court",
+      "email": "pwickrath1y@blogs.com",
+      "status": 0
+    },
+    {
+      "id": 72,
+      "nama": "Cecilius Gantley",
+      "ktp": "4412620433",
+      "alamat": "2 Ruskin Lane",
+      "email": "cgantley1z@bigcartel.com",
+      "status": 0
+    },
+    {
+      "id": 73,
+      "nama": "Jimmy Heavyside",
+      "ktp": "2691932397",
+      "alamat": "239 Pennsylvania Plaza",
+      "email": "jheavyside20@statcounter.com",
+      "status": 1
+    },
+    {
+      "id": 74,
+      "nama": "Stephan Linthead",
+      "ktp": "1244462446",
+      "alamat": "125 Sunfield Plaza",
+      "email": "slinthead21@chron.com",
+      "status": 0
+    },
+    {
+      "id": 75,
+      "nama": "Maxy Brightie",
+      "ktp": "1943976244",
+      "alamat": "964 Green Ridge Road",
+      "email": "mbrightie22@etsy.com",
+      "status": 1
+    },
+    {
+      "id": 76,
+      "nama": "Den Sweatland",
+      "ktp": "1223488438",
+      "alamat": "0009 Lakeland Center",
+      "email": "dsweatland23@tamu.edu",
+      "status": 0
+    },
+    {
+      "id": 77,
+      "nama": "Toby Corbet",
+      "ktp": "2668123526",
+      "alamat": "8593 Straubel Avenue",
+      "email": "tcorbet24@ibm.com",
+      "status": 0
+    },
+    {
+      "id": 78,
+      "nama": "Harman Hiom",
+      "ktp": "0086979078",
+      "alamat": "4176 Bobwhite Parkway",
+      "email": "hhiom25@usatoday.com",
+      "status": 1
+    },
+    {
+      "id": 79,
+      "nama": "Newton Spurnier",
+      "ktp": "0386307601",
+      "alamat": "5656 Moulton Plaza",
+      "email": "nspurnier26@howstuffworks.com",
+      "status": 1
+    },
+    {
+      "id": 80,
+      "nama": "Brigid Burhill",
+      "ktp": "9315078241",
+      "alamat": "4 Longview Park",
+      "email": "bburhill27@t-online.de",
+      "status": 0
+    },
+    {
+      "id": 81,
+      "nama": "Engelbert Erbe",
+      "ktp": "1166769925",
+      "alamat": "855 Manley Center",
+      "email": "eerbe28@dmoz.org",
+      "status": 1
+    },
+    {
+      "id": 82,
+      "nama": "Reba Shovelbottom",
+      "ktp": "1793085048",
+      "alamat": "072 Vermont Center",
+      "email": "rshovelbottom29@cargocollective.com",
+      "status": 1
+    },
+    {
+      "id": 83,
+      "nama": "Cully Jennings",
+      "ktp": "4001016664",
+      "alamat": "8931 Raven Lane",
+      "email": "cjennings2a@cocolog-nifty.com",
+      "status": 1
+    },
+    {
+      "id": 84,
+      "nama": "Walker Life",
+      "ktp": "6170748419",
+      "alamat": "418 4th Hill",
+      "email": "wlife2b@hud.gov",
+      "status": 1
+    },
+    {
+      "id": 85,
+      "nama": "Maisie Burcher",
+      "ktp": "3565282541",
+      "alamat": "6 Summer Ridge Avenue",
+      "email": "mburcher2c@deliciousdays.com",
+      "status": 1
+    },
+    {
+      "id": 86,
+      "nama": "Pablo Mercey",
+      "ktp": "6267488683",
+      "alamat": "0277 Goodland Way",
+      "email": "pmercey2d@scribd.com",
+      "status": 0
+    },
+    {
+      "id": 87,
+      "nama": "Almeda Harly",
+      "ktp": "2692291824",
+      "alamat": "5712 Delaware Point",
+      "email": "aharly2e@themeforest.net",
+      "status": 0
+    },
+    {
+      "id": 88,
+      "nama": "Quentin Rameaux",
+      "ktp": "5899803746",
+      "alamat": "45310 Corry Hill",
+      "email": "qrameaux2f@wp.com",
+      "status": 0
+    },
+    {
+      "id": 89,
+      "nama": "Albie Gilham",
+      "ktp": "8321741096",
+      "alamat": "873 Hintze Crossing",
+      "email": "agilham2g@issuu.com",
+      "status": 1
+    },
+    {
+      "id": 90,
+      "nama": "Hashim Soff",
+      "ktp": "0477658997",
+      "alamat": "049 Lotheville Drive",
+      "email": "hsoff2h@stumbleupon.com",
+      "status": 0
+    },
+    {
+      "id": 91,
+      "nama": "Sheri Langdale",
+      "ktp": "0491382170",
+      "alamat": "6 Scott Place",
+      "email": "slangdale2i@java.com",
+      "status": 1
+    },
+    {
+      "id": 92,
+      "nama": "Franny Pimme",
+      "ktp": "9040776199",
+      "alamat": "846 Nobel Avenue",
+      "email": "fpimme2j@cdbaby.com",
+      "status": 0
+    },
+    {
+      "id": 93,
+      "nama": "Lavena Comley",
+      "ktp": "5384460539",
+      "alamat": "31561 Cherokee Way",
+      "email": "lcomley2k@bbb.org",
+      "status": 1
+    },
+    {
+      "id": 94,
+      "nama": "Cedric Kopta",
+      "ktp": "6381248823",
+      "alamat": "399 Caliangt Hill",
+      "email": "ckopta2l@ocn.ne.jp",
+      "status": 0
+    },
+    {
+      "id": 95,
+      "nama": "Augusta Hawkswell",
+      "ktp": "2693140307",
+      "alamat": "1 West Crossing",
+      "email": "ahawkswell2m@icq.com",
+      "status": 1
+    },
+    {
+      "id": 96,
+      "nama": "Arman Bunning",
+      "ktp": "1957897465",
+      "alamat": "7 Graceland Alley",
+      "email": "abunning2n@linkedin.com",
+      "status": 0
+    },
+    {
+      "id": 97,
+      "nama": "Fallon Spurway",
+      "ktp": "3903052442",
+      "alamat": "5 2nd Avenue",
+      "email": "fspurway2o@mtv.com",
+      "status": 1
+    },
+    {
+      "id": 98,
+      "nama": "Corie Bossons",
+      "ktp": "0758832893",
+      "alamat": "55366 Ruskin Place",
+      "email": "cbossons2p@furl.net",
+      "status": 0
+    },
+    {
+      "id": 99,
+      "nama": "Issy Frewer",
+      "ktp": "1951462661",
+      "alamat": "154 Myrtle Court",
+      "email": "ifrewer2q@youtu.be",
+      "status": 0
+    },
+    {
+      "id": 100,
+      "nama": "Rosalynd MacKnight",
+      "ktp": "4194393732",
+      "alamat": "281 Bay Place",
+      "email": "rmacknight2r@wp.com",
+      "status": 0
+    },
+    {
+      "ktp": "61030423045550",
+      "alamat": "Jl. Candi Gebang",
+      "id": 101
+    },
+    {
+      "nama": "Edwin",
+      "ktp": "131311356476543",
+      "alamat": "Jl. Candi Gebang",
+      "id": 102
+    }
   ]
 }

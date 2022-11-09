@@ -1,16 +1,14 @@
-import React, { useContext } from 'react';
-import FormContext from '../FormContext';
+import React from 'react';
 import Form from 'react-bootstrap/Form';
-import { useForm } from "react-hook-form";
 
-
-const Text = ({label, value, onChange, type, ...rest}) => {
+const Text = ({ field, register}) => {
   // const { handleChange } = useContext(FormContext);
   return (
     <Form.Group className='m-2'>
-      <Form.Label>{label}</Form.Label>
-      {/* <input type="text" placeholder={rest?.placeholder} value={value} onChange={e => onChange(e)}/> */}
-      <Form.Control name={rest.name} type="text" placeholder={rest.placeholder} value={value} onChange={e => onChange(rest.id, e.target.value)} />
+      <Form.Label>{field.label}</Form.Label>
+      <Form.Control type={field.type} maxLength={field.rules.maxLength}
+        {...register(field.name, field.rules)}
+      />
     </Form.Group>
   )
 }

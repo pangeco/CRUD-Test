@@ -1,97 +1,83 @@
-import React, { useEffect, useState } from 'react'
-import { useNavigate } from 'react-router-dom';
+import React, { useState, useEffect } from 'react'
+import { useNavigate, useParams } from 'react-router-dom';
 import axios from 'axios';
 import Element from '../components/Element';
 import FieldTable from '../components/FieldTable.json';
-import FormContext from '../components/FormContext';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import { useForm } from "react-hook-form";
+import Swal from 'sweetalert2';
+import withReactContent from 'sweetalert2-react-content'
 
-const Edit = ({ data }) => {
-    const [newData, setNewData] = useState(data);
+const MySwal = withReactContent(Swal);
+
+const Edit = () => {
+    const [data, setData] = useState({});
+    const { id } = useParams();
     const [elements, setElemennts] = useState(FieldTable[0]);
-    const { fields, page_label } = elements;
+    const { fields, title } = elements;
     const navigate = useNavigate();
-    const [inputFields, setInputFields] = useState([{name: '', phone: '', email: '', address: '', status: ''}]);
-
-    const handleChange = (id, event) => {
-        console.log("handle change");
-        const newElements = { ...elements };
-        newElements.fields.forEach(field => {
-            if(id === field.id){
-                switch (field.type) {
-                    case "checkkox":
-                        field['value'] = event.target.checked
-                    default:
-                        field['value'] = event.target.value;
-                        break;
-                }
-            }
+    const { register, handleSubmit, setValue } = useForm();
+    
+    const hanldeAlert = () => {
+        MySwal.fire({
+           title: <p>Berhasil</p>,
+           icon: 'success',
+           text: 'Data Berhasil diubah',
+           showConfirmButton: false,
+           timer: 3000
         });
-        setElemennts(newElements);
-    }
-
-    const handleFormChange = (index, event) => {
-        const data = [...inputFields];
-        data[index][event.target.name] = event.target.value;
-        setInputFields(data);
-    }
-    const addFields = () => {
-        const newField = {
-            name: '', 
-            ktp: '',
-            email: '',
-            address: '', 
-            status: ''
-        }
-        setInputFields([...inputFields, newField]);
     }
     
-    // useEffect(() => {
-    //     console.log(fields);
-    // }, []);
-
-    const removeField = (index) => {
-        const newField = [...inputFields];
-        newField.splice(index, 1);
-        setInputFields(newField);
-    }
-    const handleSubmit = (event) => {
-        console.log("handle Submit");
-        event.preventDefault();
-        console.log(elements);
-        const { fields } = elements;
-        const newValue = {};
-        fields.map((field, index) => {
-            newValue[field.id] = field.value
-        }) 
-        console.log(newValue);
-        const url = 'http://localhost:8000/customers'
+    const getData = async() => {
+        const url = 'http://localhost:8000/customer/' + id;
         axios({
-            method: 'POST',
-            url: url,
-            data: newValue,
+          method: 'GET',
+          url: url
         }).then(res => {
+          setData(res.data);
         }).catch(error => {});
-        navigate("/");
+      }
+  
+      useEffect(() => {
+        getData();
+    }, []);
+    
+    useEffect(() => {
+        for(const property in data){
+            if(data.hasOwnProperty(property)){
+                setValue(property, data[property]);
+            }
+        }
+      },[data]);
+
+    const onSubmit = (data) => {
+        const { nama, ktp, alamat, email } = data;
+        const url = 'http://localhost:8000/customer/' + data.id;
+        axios({
+            method: 'PUT',
+            url: url,
+            data: { nama, ktp, alamat, email },
+        }).then(res => {
+            hanldeAlert();
+            navigate("/");
+        }).catch(error => {});
     }
+
   return (
-    <FormContext.Provider value={ { handleChange } }>
-        <div className='mx-2'>
-            <p className='flex justify-center font-bold uppercase text-xl m-2 p-2'>EDIT {page_label}</p>
-            <form onSubmit={() => handleSubmit()}>
-                <div className='block p-4 shadow-lg rounded-lg border-grey border'>
-                    {fields ? fields.map((field, index) => 
-                        <Element key={index} field={field} />
-                        ) : null}
-                    <div className='m-2'>
-                        {/* <button onClick={() => addFields()} type="button" className="p-2 bg-blue-600 text-white rounded-md mx-2">Add More</button> */}
-                        <button onClick={(e) => handleSubmit(e)} type='submit' className="p-2 bg-green-600 text-white font-bold rounded-md mx-2">Submit</button>
-                    </div>
+    <div className='mx-2'>
+        <p className='flex justify-center font-bold uppercase text-xl m-2 p-2'>Edit {title}</p>
+        <Form onSubmit={handleSubmit(onSubmit)}>
+            <div className='block p-4 shadow-lg rounded-lg border-grey border'>
+                {fields.map((field, index) => (
+                    <Element field={field} key={index} register={register} mode="edit"/>
+                ))}
+                <div className='m-2'>
+                    <Button onClick={handleSubmit(onSubmit)} type='submit' variant="primary">Submit</Button>
                 </div>
-            </form>
-        </div>
-    </FormContext.Provider>
+            </div>
+        </Form>
+    </div>
   )
 }
 
