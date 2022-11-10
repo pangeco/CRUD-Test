@@ -4,7 +4,7 @@ import Form from 'react-bootstrap/Form';
 const Select = ({ field, register}) => {
   return (
       <Form.Group className='m-2'>
-        <Form.Label>Status</Form.Label>
+        <Form.Label className="fw-bold">{field.label}</Form.Label>
         <Form.Select
         defaultValue={field.defaultValue}
         {...register(field.name, field.rules)}>

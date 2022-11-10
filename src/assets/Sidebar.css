@@ -1,0 +1,9 @@
+.Sidebar {
+    height: auto;
+    background-color: slategray;
+    width: 10rem;
+}
+
+.List .Row:hover{
+    background-color: darkslategray;
+}

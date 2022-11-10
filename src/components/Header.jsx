@@ -1,27 +1,27 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Container, Nav, Navbar, } from 'react-bootstrap';
 import { BsHouseDoorFill , BsPlus } from "react-icons/bs";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useLocation } from 'react-router-dom';
 
 const Header = () => {
-    const [actived, setActived] = useState();
-
-    const handleActived = () => {
-
-    }
+    const location = useLocation();
+    
   return (
-    <Navbar bg="dark" variant='dark' expand="lg" className='border-bottom' sticky="top">
+    <Navbar bg="primary" variant='dark' expand="lg" className='border-bottom' sticky="top">
         <Container>
             <Navbar.Brand href="/">CRUD Test</Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Toggle aria-controls="basic-navbar-nav" className='bg-secondary'/>
             <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
-                <Nav>
-                    <Nav.Link href="/">
+                <Nav activeKey={location.pathname}>
+                    <Nav.Link href="/" className='rounded-2 mx-1'>
                         {/* <BsHouseDoorFill /> */}
-                        Home
+                    {/* <FontAwesomeIcon icon="fa-solid fa-coffee"/> */}
+                        HOME
                     </Nav.Link>
-                    <Nav.Link href="/insert">
+                    <Nav.Link href="/insert" className='rounded-2 mx-1'>
                         {/* <BsPlus /> */}
-                        Insert
+                        INSERT
                     </Nav.Link>
                     {/* <Nav.Link href="/login">
                         Login
@@ -29,7 +29,6 @@ const Header = () => {
                 </Nav>
             </Navbar.Collapse>
         </Container>
-        
     </Navbar>
   )
 }

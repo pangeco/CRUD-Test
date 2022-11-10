@@ -1,13 +1,6 @@
 {
   "customer": [
     {
-      "nama": "Edwin Pangda",
-      "ktp": "61030423045550",
-      "alamat": "Jl. Candi Gebang",
-      "status": 1,
-      "id": 1
-    },
-    {
       "nama": "Quillan Poynton",
       "ktp": "3235887172",
       "alamat": "08 West Crossing",
@@ -799,15 +792,10 @@
       "status": 0
     },
     {
-      "ktp": "61030423045550",
-      "alamat": "Jl. Candi Gebang",
+      "nama": "Zaenal",
+      "ktp": "61030423402",
+      "alamat": "Jl. Solo",
       "id": 101
-    },
-    {
-      "nama": "Edwin",
-      "ktp": "131311356476543",
-      "alamat": "Jl. Candi Gebang",
-      "id": 102
     }
   ]
 }

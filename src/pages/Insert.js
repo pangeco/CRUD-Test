@@ -43,7 +43,7 @@ const Insert = () => {
   return (
     // <FormContext.Provider value={ { handleChange }>
         <div className='mx-2'>
-            <p className='flex justify-center font-bold uppercase text-xl m-2 p-2'>New {title}</p>
+            <p className='m-2 p-2 text-uppercase fw-bold fs-2'>New {title}</p>
             <Form onSubmit={handleSubmit(onSubmit)}>
                 <div className='block p-4 shadow-lg rounded-3 border-grey border'>
                     {fields.map((field, index) => (

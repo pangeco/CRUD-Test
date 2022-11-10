@@ -60,13 +60,13 @@ const Edit = () => {
             data: { nama, ktp, alamat, email },
         }).then(res => {
             hanldeAlert();
-            navigate("/");
+            navigate("/customer/" + data.id);
         }).catch(error => {});
     }
 
   return (
     <div className='mx-2'>
-        <p className='flex justify-center font-bold uppercase text-xl m-2 p-2'>Edit {title}</p>
+        <p className='m-2 p-2 text-uppercase fw-bold fs-2'>Edit {title}</p>
         <Form onSubmit={handleSubmit(onSubmit)}>
             <div className='block p-4 shadow-lg rounded-lg border-grey border'>
                 {fields.map((field, index) => (

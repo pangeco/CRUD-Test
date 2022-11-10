@@ -7,6 +7,10 @@ import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Swal from 'sweetalert2';
+import withReactContent from 'sweetalert2-react-content'
+
+const MySwal = withReactContent(Swal);
 
 const Detail = () => {
     const [data, setData] = useState({});
@@ -14,6 +18,16 @@ const Detail = () => {
     const navigate = useNavigate();
     const customer = useSelector(state => state.customer);
     const dispatch = useDispatch();
+
+    const hanldeAlert = () => {
+        MySwal.fire({
+           title: <p>Berhasil</p>,
+           icon: 'success',
+           text: 'Data Telah Dihapus',
+           showConfirmButton: false,
+           timer: 3000
+        });
+    }
 
     const getData = async() => {
       const url = 'http://localhost:8000/customer/' + id;
@@ -35,38 +49,56 @@ const Detail = () => {
     }
 
     const handleDelete = async() => {
-        let status = 0;
-        if(data.status !=0 ){
-            status = 0;
-        }else{
-            status = 1;
-        }
+        // let status = 0;
+        // if(data.status !=0 ){
+        //     status = 0;
+        // }else{
+        //     status = 1;
+        // }
 
         const url = 'http://localhost:8000/customer/' + id;
         axios({
-            method: 'PUT',
+            method: 'DELETE',
             url: url,
-            data: {
-                nama: data.nama,
-                ktp: data.ktp,
-                alamat: data.alamat,
-                status: status,
-            }
+            // data: {
+            //     nama: data.nama,
+            //     ktp: data.ktp,
+            //     alamat: data.alamat,
+            //     status: status,
+            // }
         }).then(res => {
+            hanldeAlert();
             navigate("/");
         }).catch(error => {});
     }
 
+    const handleWarning = (event) => {
+        event.preventDefault();
+        MySwal.fire({
+            title: <p>PERINGATAN !</p>,
+            icon: 'warning',
+            text: 'Hapus Data?',
+            showCancelButton: true,
+            confirmButtonText: 'IYA',
+            cancelButtonText: "Tidak",
+        }).then(result => {
+            if(result.isConfirmed){
+                handleDelete();
+            }
+        })
+    }
+
   return (
     <Container>
-        <h1 className='m-2 p-2 flex justify-center font-bold text-xl uppercase'>Customer Profile</h1>
+        <h1 className='m-2 p-2 fs-2 fw-bold'>Customer Profile</h1>
         <div className='m-2 p-3 border rounded-2 shadow-lg'>
             <div className='m-1 p-1 d-flex justify-content-end'>
-                <Button variant='warning' className='mx-1' onClick={() => handleEdit()}>Edit</Button>
-                {data.status != 0 ?
-                    <Button onClick={() => handleDelete()} variant='danger' className="ml-1">DEACTIVE</Button>
-                    : <Button onClick={() => handleDelete()} type='submit' className="btn btn-success m;-1">ACTIVE</Button>
-                }
+                <Button variant='warning' size="sm" className='mx-1' onClick={() => handleEdit()}>UBAH</Button>
+                <Button onClick={(e) => handleWarning(e)} variant='danger' size="sm" className="ml-1">HAPUS</Button>
+                {/* {data.status != 0 ?
+                    <Button onClick={(e) => handleWarning(e)} variant='danger' size="sm" className="ml-1">DEACTIVE</Button>
+                    : <Button onClick={(e) => handleWarning(e)} type='submit' size="sm" className="btn btn-success m;-1">ACTIVE</Button>
+                } */}
             </div>
             <Row className='border-bottom m-1 p-1'>
                 <Col className='fw-bold' xs={2}>Nama</Col>
